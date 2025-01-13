@@ -1,0 +1,11 @@
+.wsf-form input[type=number].wsf-field::-webkit-inner-spin-button, .wsf-form input[type=number].wsf-field::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.wsf-form input[type=number].wsf-field[data-wsf-no-spinner] {
+  -moz-appearance: textfield;
+}
+
+.wsf-form input[type=number].wsf-field[data-wsf-no-spinner]::-webkit-outer-spin-button, .wsf-form input[type=number].wsf-field[data-wsf-no-spinner]::-webkit-inner-spin-button {
+  display: none !important;
+}
