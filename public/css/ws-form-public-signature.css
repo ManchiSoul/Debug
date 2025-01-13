@@ -1,0 +1,53 @@
+.wsf-form input[type=text].wsf-field ~ canvas {
+  background-color: #ffffff;
+  border: var(--wsf-field-border);
+  border-radius: var(--wsf-field-border-radius);
+  cursor: crosshair;
+  width: 100%;
+}
+
+.wsf-form input[type=text].wsf-field ~ canvas:hover:enabled:not(:focus) {
+  background-color: #ffffff;
+  border: var(--wsf-field-border-width) var(--wsf-field-border-style) var(--wsf-field-border-color-hover);
+}
+
+.wsf-form input[type=text].wsf-field ~ canvas:focus {
+  background-color: #ffffff;
+  border: var(--wsf-field-border-width) var(--wsf-field-border-style) var(--wsf-field-border-color-focus);
+  box-shadow: var(--wsf-field-box-shadow);
+  color: var(--wsf-field-color-focus);
+  outline: 0;
+}
+
+.wsf-form input[type=text].wsf-field ~ canvas.wsf-field:disabled {
+  background-color: var(--wsf-field-color-background-disabled);
+  border: var(--wsf-field-border-width) var(--wsf-field-border-style) var(--wsf-field-border-color-disabled);
+  color: var(--wsf-field-color-disabled);
+  -webkit-text-fill-color: var(--wsf-field-color-disabled);
+  cursor: not-allowed;
+  opacity: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.wsf-form input[type=text].wsf-field:disabled ~ .wsf-help > [data-action='wsf-signature-clear'] {
+  display: none;
+}
+
+.wsf-form.wsf-validated input[type=text].wsf-field:invalid ~ canvas {
+  border-color: var(--wsf-field-border-color-invalid);
+}
+
+.wsf-form.wsf-validated input[type=text].wsf-field:invalid ~ canvas:focus {
+  box-shadow: var(--wsf-field-box-shadow);
+}
+
+.wsf-form input[type=text].wsf-field ~ canvas {
+  transition: background-color var(--wsf-form-transition), border-color var(--wsf-form-transition), box-shadow var(--wsf-form-transition);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt].wsf-validated input[type=text].wsf-field:invalid ~ canvas {
+  border-color: var(--wsf-field-border-color-invalid-alt);
+}

@@ -1,0 +1,26 @@
+{"template_categories": [
+
+	{	
+		"id"			:	"styler",
+		"label" 		: 	"Styler",
+		"file_path"		:	"styler/",
+		"templates"		:	[
+
+			{
+				"id"					:	"styler-lite",
+				"label" 				: 	"Styler - LITE",
+				"file_json"				:	"wsf-form-styler-lite.json",
+				"preview_url"			:	false,
+				"pro_required"			:	false
+			},
+
+			{
+				"id"					:	"styler-pro",
+				"label" 				: 	"Styler - PRO",
+				"file_json"				:	"wsf-form-styler-pro.json",
+				"preview_url"			:	false,
+				"pro_required"			:	true
+			}
+		]
+	}
+]}

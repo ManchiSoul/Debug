@@ -1,0 +1,46 @@
+.wsf-form .iti {
+  width: 100%;
+}
+
+.wsf-form .iti .iti__flag-container {
+  height: var(--wsf-field-height);
+}
+
+.wsf-form .iti .iti__flag-container .iti__selected-flag {
+  padding: var(--wsf-field-padding);
+}
+
+.wsf-form .iti.iti--allow-dropdown input,
+.wsf-form .iti.iti--allow-dropdown input[type=tel],
+.wsf-form .iti.iti--allow-dropdown input[type=text], .wsf-form .iti.iti--separate-dial-code input,
+.wsf-form .iti.iti--separate-dial-code input[type=tel],
+.wsf-form .iti.iti--separate-dial-code input[type=text] {
+  padding-right: var(--wsf-field-padding-horizontal);
+  padding-left: calc((var(--wsf-field-padding-horizontal) * 2) + 20px + 6px + 6px);
+  margin-left: 0;
+}
+
+.wsf-form .wsf-input-group > .iti {
+  flex: 1 1 auto;
+  min-width: 0;
+  position: relative;
+  width: 1% !important;
+}
+
+.wsf-form .wsf-input-group.wsf-input-group-has-prepend > .iti > input[type='tel'] {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.wsf-form .wsf-input-group.wsf-input-group-has-append > .iti > input[type='tel'] {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.wsf-form:not(.wsf-label-position-inside-hide) .wsf-label-position-inside .iti input.wsf-field[placeholder]:focus + label,
+.wsf-form:not(.wsf-label-position-inside-hide) .wsf-label-position-inside .iti input.wsf-field[placeholder]:focus + .wsf-input-group-append + label,
+.wsf-form:not(.wsf-label-position-inside-hide) .wsf-label-position-inside .iti input.wsf-field[placeholder]:not(:placeholder-shown) + label,
+.wsf-form:not(.wsf-label-position-inside-hide) .wsf-label-position-inside .iti input.wsf-field[placeholder]:not(:placeholder-shown) + .wsf-input-group-append + label {
+  -webkit-transform: translate(var(--wsf-field-tel-transform-x), var(--wsf-field-label-inside-offset)) scale(var(--wsf-field-label-inside-scale));
+          transform: translate(var(--wsf-field-tel-transform-x), var(--wsf-field-label-inside-offset)) scale(var(--wsf-field-label-inside-scale));
+}

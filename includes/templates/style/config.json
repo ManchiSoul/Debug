@@ -1,0 +1,46 @@
+{"template_categories": [
+
+	{	
+		"id"			:	"standard",
+		"label" 		: 	"Standard",
+		"file_path"		:	"standard/",
+		"sort"			:	false,
+		"templates"		:	[
+
+			{
+				"id"					:	"standard-light",
+				"label" 				: 	"Standard - Light",
+				"file_json"				:	"wsf-style-standard-light.json"
+			},
+
+			{
+				"id"					:	"standard-dark",
+				"label" 				: 	"Standard - Dark",
+				"file_json"				:	"wsf-style-standard-dark.json"
+			}
+		]
+	},
+
+	{	
+		"id"			:	"conversational",
+		"label" 		: 	"Conversational",
+		"file_path"		:	"conversational/",
+		"sort"			:	false,
+		"templates"		:	[
+
+			{
+				"id"					:	"conversational-light",
+				"label" 				: 	"Conversational - Light",
+				"file_json"				:	"wsf-style-conversational-light.json",
+				"pro_required"			:	true
+			},
+
+			{
+				"id"					:	"conversational-dark",
+				"label" 				: 	"Conversational - Dark",
+				"file_json"				:	"wsf-style-conversational-dark.json",
+				"pro_required"			:	true
+			}
+		]
+	}
+]}

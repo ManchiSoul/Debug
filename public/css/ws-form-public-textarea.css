@@ -1,0 +1,26 @@
+.wsf-form textarea.wsf-field {
+  height: auto;
+  min-height: var(--wsf-field-height);
+  overflow: auto;
+  resize: vertical;
+}
+
+.wsf-form textarea.wsf-field[data-textarea-type='tinymce'] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.wsf-form textarea.wsf-field[data-wsf-field-sizing-content] {
+  field-sizing: content;
+}
+
+.wsf-form [data-type='textarea'] .wp-editor-tabs {
+  box-sizing: content-box;
+}
+
+.wsf-form [data-type='textarea'] .mce-btn.mce-active button,
+.wsf-form [data-type='textarea'] .mce-btn.mce-active:hover button,
+.wsf-form [data-type='textarea'] .mce-btn.mce-active i,
+.wsf-form [data-type='textarea'] .mce-btn.mce-active:hover i {
+  color: #000;
+}

@@ -1,0 +1,303 @@
+.wsf-form input[type=range].wsf-field {
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  --wsf-color-lower-track: var(--wsf-field-range-track-lower-color);
+  --wsf-color-upper-track: var(--wsf-field-range-track-upper-color);
+  --wsf-fill-lower-track: 0%;
+}
+
+.wsf-form input[type=range].wsf-field[data-fill-lower-track]::-webkit-slider-runnable-track {
+  background-image: linear-gradient(to right, var(--wsf-color-lower-track), var(--wsf-color-lower-track) var(--wsf-fill-lower-track), var(--wsf-color-upper-track) var(--wsf-fill-lower-track), var(--wsf-color-upper-track) 100%);
+}
+
+.wsf-form input[type=range].wsf-field[data-fill-lower-track]::-moz-range-track {
+  background-image: linear-gradient(to right, var(--wsf-color-lower-track), var(--wsf-color-lower-track) var(--wsf-fill-lower-track), var(--wsf-color-upper-track) var(--wsf-fill-lower-track), var(--wsf-color-upper-track) 100%);
+}
+
+.wsf-form input[type=range].wsf-field[data-fill-lower-track]::-ms-fill-lower {
+  background-color: var(--wsf-color-lower-track);
+}
+
+.wsf-form input[type=range].wsf-field::-webkit-slider-runnable-track {
+  background-color: var(--wsf-field-range-track-color);
+  border-radius: var(--wsf-field-range-track-border-radius);
+  cursor: pointer;
+  height: var(--wsf-field-range-track-size);
+}
+
+.wsf-form input[type=range].wsf-field::-moz-range-track {
+  background-color: var(--wsf-field-range-track-color);
+  border-radius: var(--wsf-field-range-track-border-radius);
+  cursor: pointer;
+  height: var(--wsf-field-range-track-size);
+}
+
+.wsf-form input[type=range].wsf-field::-ms-track {
+  background-color: var(--wsf-field-range-track-color);
+  border-color: transparent;
+  border-radius: var(--wsf-field-range-track-border-radius);
+  color: transparent;
+  cursor: pointer;
+  height: var(--wsf-field-range-track-size);
+}
+
+.wsf-form input[type=range].wsf-field::-ms-fill-lower, .wsf-form input[type=range].wsf-field::-ms-fill-upper {
+  background-color: var(--wsf-field-range-track-color);
+  border-radius: var(--wsf-field-range-track-border-radius);
+  cursor: pointer;
+  height: var(--wsf-field-range-track-size);
+}
+
+.wsf-form input[type=range].wsf-field::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: var(--wsf-field-range-thumb-color);
+  border-radius: 50%;
+  cursor: pointer;
+  height: var(--wsf-field-range-thumb-size);
+  margin-top: calc(-1 * (var(--wsf-field-range-thumb-size) - var(--wsf-field-range-track-size)) / 2);
+  width: var(--wsf-field-range-thumb-size);
+}
+
+.wsf-form input[type=range].wsf-field::-moz-range-thumb {
+  -webkit-appearance: none;
+  background-color: var(--wsf-field-range-thumb-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: var(--wsf-field-range-thumb-size);
+  margin-top: calc(-1 * (var(--wsf-field-range-thumb-size) - var(--wsf-field-range-track-size)) / 2);
+  width: var(--wsf-field-range-thumb-size);
+}
+
+.wsf-form input[type=range].wsf-field::-ms-thumb {
+  -webkit-appearance: none;
+  background-color: var(--wsf-field-range-thumb-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: var(--wsf-field-range-thumb-size);
+  margin-top: calc(-1 * (var(--wsf-field-range-thumb-size) - var(--wsf-field-range-track-size)) / 2);
+  width: var(--wsf-field-range-thumb-size);
+}
+
+.wsf-form input[type=range].wsf-field:hover:enabled:not(:checked):not(:focus) {
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.wsf-form input[type=range].wsf-field:focus {
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.wsf-form input[type=range].wsf-field:focus::-webkit-slider-thumb {
+  box-shadow: var(--wsf-field-box-shadow);
+}
+
+.wsf-form input[type=range].wsf-field:focus::-moz-range-thumb {
+  box-shadow: var(--wsf-field-box-shadow);
+}
+
+.wsf-form input[type=range].wsf-field:focus::-ms-thumb {
+  box-shadow: var(--wsf-field-box-shadow);
+}
+
+.wsf-form input[type=range].wsf-field::-moz-focus-outer {
+  border: 0;
+}
+
+.wsf-form input[type=range].wsf-field:disabled {
+  opacity: .5;
+}
+
+.wsf-form input[type=range].wsf-field:disabled::-webkit-slider-runnable-track {
+  cursor: not-allowed;
+}
+
+.wsf-form input[type=range].wsf-field:disabled::-moz-range-track {
+  cursor: not-allowed;
+}
+
+.wsf-form input[type=range].wsf-field:disabled::-ms-fill-lower, .wsf-form input[type=range].wsf-field:disabled::-ms-fill-upper {
+  cursor: not-allowed;
+}
+
+.wsf-form input[type=range].wsf-field:disabled::-webkit-slider-thumb {
+  cursor: not-allowed;
+}
+
+.wsf-form input[type=range].wsf-field:disabled::-moz-range-thumb {
+  cursor: not-allowed;
+}
+
+.wsf-form input[type=range].wsf-field:disabled::-ms-thumb {
+  cursor: not-allowed;
+}
+
+.wsf-form input[type=range].wsf-field.wsf-hue::-webkit-slider-runnable-track {
+  background-image: linear-gradient(to right, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+}
+
+.wsf-form input[type=range].wsf-field.wsf-hue::-moz-range-track {
+  background-image: linear-gradient(to right, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+}
+
+.wsf-form input[type=range].wsf-field.wsf-hue::-ms-track {
+  background-image: linear-gradient(to right, #ff0000 0%, #ffff00 17%, #00ff00 33%, #00ffff 50%, #0000ff 67%, #ff00ff 83%, #ff0000 100%);
+}
+
+.wsf-form input[type=range].wsf-field + datalist {
+  display: block;
+  height: var(--wsf-field-range-tickmark-label-font-size);
+  position: relative;
+  margin: 0 calc(var(--wsf-field-range-thumb-size) / 2) 0;
+  top: calc(-1 * var(--wsf-field-range-thumb-size));
+  width: calc(100% - var(--wsf-field-range-thumb-size));
+  z-index: 0;
+}
+
+.wsf-form input[type=range].wsf-field + datalist option {
+  display: block;
+  left: var(--wsf-position-tick-mark);
+  padding: 0;
+  position: absolute;
+  top: 0;
+}
+
+.wsf-form input[type=range].wsf-field + datalist option:before {
+  background-color: var(--wsf-field-range-tickmark-color);
+  content: '';
+  display: block;
+  height: var(--wsf-field-range-tickmark-height);
+  margin-left: calc(-1 * var(--wsf-field-range-tickmark-width) / 2);
+  width: var(--wsf-field-range-tickmark-width);
+}
+
+.wsf-form input[type=range].wsf-field + datalist option:after {
+  content: attr(data-label);
+  color: var(--wsf-field-range-tickmark-label-color);
+  font-family: var(--wsf-field-range-tickmark-label-font-family);
+  font-size: var(--wsf-field-range-tickmark-label-font-size);
+  font-style: var(--wsf-field-range-tickmark-label-font-style);
+  font-weight: var(--wsf-field-range-tickmark-label-font-weight);
+  letter-spacing: var(--wsf-field-range-tickmark-label-letter-spacing);
+  line-height: var(--wsf-field-range-tickmark-label-line-height);
+  position: absolute;
+  -webkit-text-decoration: var(--wsf-field-range-tickmark-label-text-decoration);
+          text-decoration: var(--wsf-field-range-tickmark-label-text-decoration);
+  text-transform: var(--wsf-field-range-tickmark-label-text-transform);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.wsf-form .wsf-field-wrapper[data-type='range'].wsf-range-vertical,
+.wsf-form .wsf-field-wrapper[data-type='price_range'].wsf-range-vertical {
+  --wsf-range-vertical-height: 200px;
+}
+
+.wsf-form .wsf-field-wrapper[data-type='range'].wsf-range-vertical input.wsf-field,
+.wsf-form .wsf-field-wrapper[data-type='price_range'].wsf-range-vertical input.wsf-field {
+  left: calc(-1 * (var(--wsf-range-vertical-height) - (var(--wsf-field-range-thumb-size) / 2)));
+  position: relative;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transform-origin: center right;
+          transform-origin: center right;
+  width: var(--wsf-range-vertical-height);
+  z-index: 1;
+}
+
+.wsf-form .wsf-field-wrapper[data-type='range'].wsf-range-vertical input.wsf-field + datalist,
+.wsf-form .wsf-field-wrapper[data-type='price_range'].wsf-range-vertical input.wsf-field + datalist {
+  left: calc(-1 * (var(--wsf-range-vertical-height) - var(--wsf-field-range-thumb-size)));
+  top: calc(-1 * var(--wsf-field-range-thumb-size) / 2);
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-transform-origin: center right;
+          transform-origin: center right;
+  width: calc(var(--wsf-range-vertical-height) - var(--wsf-field-range-thumb-size));
+}
+
+.wsf-form .wsf-field-wrapper[data-type='range'].wsf-range-vertical input.wsf-field + datalist option:after,
+.wsf-form .wsf-field-wrapper[data-type='price_range'].wsf-range-vertical input.wsf-field + datalist option:after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+
+.wsf-form .wsf-field-wrapper[data-type='range'].wsf-range-vertical input.wsf-field ~ small,
+.wsf-form .wsf-field-wrapper[data-type='price_range'].wsf-range-vertical input.wsf-field ~ small {
+  margin-top: calc(var(--wsf-range-vertical-height) - var(--wsf-field-range-thumb-size) / 2);
+  position: relative;
+}
+
+.wsf-form input[type=range].wsf-field::-webkit-slider-thumb {
+  transition: box-shadow var(--wsf-form-transition);
+}
+
+.wsf-form input[type=range].wsf-field::-moz-range-thumb {
+  transition: box-shadow var(--wsf-form-transition);
+}
+
+.wsf-form input[type=range].wsf-field::-ms-thumb {
+  transition: box-shadow var(--wsf-form-transition);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] input[type=range].wsf-field {
+  --wsf-color-lower-track: var(--wsf-field-range-track-lower-color-alt);
+  --wsf-color-upper-track: var(--wsf-field-range-track-upper-color-alt);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] input[type=range].wsf-field::-webkit-slider-runnable-track {
+  background-color: var(--wsf-field-range-track-color-alt);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] input[type=range].wsf-field::-moz-range-track {
+  background-color: var(--wsf-field-range-track-color-alt);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] input[type=range].wsf-field::-ms-track {
+  background-color: var(--wsf-field-range-track-color-alt);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] input[type=range].wsf-field::-ms-fill-lower, html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] input[type=range].wsf-field::-ms-fill-upper {
+  background-color: var(--wsf-field-range-track-color-alt);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] input[type=range].wsf-field::-webkit-slider-thumb {
+  background-color: var(--wsf-field-range-thumb-color-alt);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] input[type=range].wsf-field::-moz-range-thumb {
+  background-color: var(--wsf-field-range-thumb-color-alt);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] input[type=range].wsf-field::-ms-thumb {
+  background-color: var(--wsf-field-range-thumb-color-alt);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] input[type=range].wsf-field + datalist option:before {
+  background-color: var(--wsf-field-range-tickmark-color-alt);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] input[type=range].wsf-field + datalist option:after {
+  color: var(--wsf-field-range-tickmark-label-color-alt);
+}
+
+@-moz-document url-prefix() {
+  .wsf-form-canvas input[type=range].wsf-field + datalist {
+    display: none;
+  }
+}

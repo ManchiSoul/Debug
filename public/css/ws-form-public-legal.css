@@ -1,0 +1,44 @@
+.wsf-form [data-wsf-legal].wsf-field {
+  background-color: var(--wsf-field-color-background);
+  border: var(--wsf-field-border);
+  border-radius: var(--wsf-field-border-radius);
+  color: var(--wsf-field-color);
+  font-family: var(--wsf-field-font-family);
+  font-size: var(--wsf-field-font-size);
+  font-weight: var(--wsf-field-font-weight);
+  line-height: var(--wsf-field-line-height);
+  padding: var(--wsf-field-padding);
+  transition: background-color var(--wsf-form-transition), border-color var(--wsf-form-transition), box-shadow var(--wsf-form-transition);
+}
+
+.wsf-form [data-wsf-legal].wsf-field:hover:enabled:not(:checked):not(:focus) {
+  background-color: var(--wsf-field-color-background-hover);
+  border-color: var(--wsf-field-border-color-hover);
+  color: var(--wsf-field-color-hover);
+}
+
+.wsf-form [data-wsf-legal].wsf-field h1, .wsf-form [data-wsf-legal].wsf-field h2, .wsf-form [data-wsf-legal].wsf-field h3, .wsf-form [data-wsf-legal].wsf-field h4, .wsf-form [data-wsf-legal].wsf-field h5, .wsf-form [data-wsf-legal].wsf-field h6, .wsf-form [data-wsf-legal].wsf-field p, .wsf-form [data-wsf-legal].wsf-field ul, .wsf-form [data-wsf-legal].wsf-field ol, .wsf-form [data-wsf-legal].wsf-field th, .wsf-form [data-wsf-legal].wsf-field td {
+  color: var(--wsf-field-color);
+  font-family: var(--wsf-field-font-family);
+  line-height: var(--wsf-field-line-height);
+  margin: 0 0 var(--wsf-field-padding-vertical);
+}
+
+.wsf-form [data-wsf-legal].wsf-field p, .wsf-form [data-wsf-legal].wsf-field ul, .wsf-form [data-wsf-legal].wsf-field ol, .wsf-form [data-wsf-legal].wsf-field th, .wsf-form [data-wsf-legal].wsf-field td {
+  font-size: var(--wsf-field-font-size);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] [data-wsf-legal].wsf-field {
+  background-color: var(--wsf-field-color-background-alt);
+  color: var(--wsf-field-color-alt);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] [data-wsf-legal].wsf-field:hover:enabled:not(:checked):not(:focus) {
+  background-color: var(--wsf-field-color-background-hover-alt);
+  border-color: var(--wsf-field-border-color-hover-alt);
+  color: var(--wsf-field-color-hover-alt);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] [data-wsf-legal].wsf-field h1, html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] [data-wsf-legal].wsf-field h2, html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] [data-wsf-legal].wsf-field h3, html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] [data-wsf-legal].wsf-field h4, html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] [data-wsf-legal].wsf-field h5, html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] [data-wsf-legal].wsf-field h6, html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] [data-wsf-legal].wsf-field p, html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] [data-wsf-legal].wsf-field ul, html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] [data-wsf-legal].wsf-field ol, html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] [data-wsf-legal].wsf-field th, html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] [data-wsf-legal].wsf-field td {
+  color: var(--wsf-field-color-alt);
+}

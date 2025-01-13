@@ -1,0 +1,74 @@
+.wsf-form meter.wsf-meter {
+  background: var(--wsf-field-meter-color-background);
+  border: none;
+  border-radius: var(--wsf-field-border-radius);
+  display: block;
+  height: var(--wsf-field-meter-size);
+  overflow: hidden;
+  width: 100%;
+}
+
+.wsf-form meter.wsf-meter::-webkit-meter-bar {
+  background: var(--wsf-field-meter-color-background);
+  border: none;
+  border-radius: var(--wsf-field-border-radius);
+  display: block;
+  height: var(--wsf-field-meter-size);
+  width: 100%;
+}
+
+.wsf-form meter.wsf-meter::-webkit-meter-optimum-value {
+  background: var(--wsf-field-meter-color-background-optimum);
+}
+
+.wsf-form meter.wsf-meter:-moz-meter-optimum::-moz-meter-bar {
+  background: var(--wsf-field-meter-color-background-optimum);
+}
+
+.wsf-form meter.wsf-meter::-webkit-meter-suboptimum-value {
+  background: var(--wsf-field-meter-color-background-sub-optimum);
+}
+
+.wsf-form meter.wsf-meter:-moz-meter-sub-optimum::-moz-meter-bar {
+  background: var(--wsf-field-meter-color-background-sub-optimum);
+}
+
+.wsf-form meter.wsf-meter::-webkit-meter-even-less-good-value {
+  background: var(--wsf-field-meter-color-background-even-less-good);
+}
+
+.wsf-form meter.wsf-meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+  background: var(--wsf-field-meter-color-background-even-less-good);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] meter.wsf-meter {
+  background: var(--wsf-field-meter-color-background-alt);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] meter.wsf-meter::-webkit-meter-bar {
+  background: var(--wsf-field-meter-color-background-alt);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] meter.wsf-meter::-webkit-meter-optimum-value {
+  background: var(--wsf-field-meter-color-background-optimum-alt);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] meter.wsf-meter:-moz-meter-optimum::-moz-meter-bar {
+  background: var(--wsf-field-meter-color-background-optimum-alt);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] meter.wsf-meter::-webkit-meter-suboptimum-value {
+  background: var(--wsf-field-meter-color-background-sub-optimum-alt);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] meter.wsf-meter:-moz-meter-sub-optimum::-moz-meter-bar {
+  background: var(--wsf-field-meter-color-background-sub-optimum-alt);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] meter.wsf-meter::-webkit-meter-even-less-good-value {
+  background: var(--wsf-field-meter-color-background-even-less-good-alt);
+}
+
+html.wsf-styler-scheme-alt .wsf-form[data-wsf-style-has-alt] meter.wsf-meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+  background: var(--wsf-field-meter-color-background-even-less-good-alt);
+}
